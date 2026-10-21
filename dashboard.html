@@ -1,1 +1,457 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#07111f"><title>Dashboard — Sharky</title><link rel="icon" href="shark.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css"></head><body class="app-shell"><header class="app-top"><a class="app-brand" href="index.html"><img src="shark.svg" alt=""><span>SHARKY<span class="brand-light">.</span></span></a><div style="display:flex;align-items:center;gap:12px"><span class="demo-pill">DEMO INTERACTIVA</span><a class="btn btn-small btn-outline" href="index.html">← Sitio web</a></div></header><div class="app-layout"><aside class="sidebar"><div class="side-label">WORKSPACE</div><button class="side-link active" data-section-link="overview"><span>▦</span> Resumen</button><button class="side-link" data-section-link="security-settings"><span>◈</span> Seguridad</button><button class="side-link" data-section-link="moderation-settings"><span>⌁</span> Moderación</button><button class="side-link" data-section-link="quick-panel"><span>⚙</span> Herramientas</button><div class="side-label" style="margin-top:25px">PREFERENCIAS</div><button class="side-link" data-section-link="preferences"><span>◎</span> Preferencias</button><div class="sidebar-note"><b style="color:#c9dbe8">Vista previa</b><br>Este panel todavía no está conectado a Discord. Los cambios son locales y sirven para probar la interfaz.</div></aside><main class="app-main"><div class="app-heading" id="overview"><div><div class="eyebrow">CENTRO DE CONTROL</div><h1>Dashboard</h1><p>Una vista general de tu configuración de Sharky.</p></div><select class="server-select" aria-label="Servidor de demostración"><option>Servidor de demostración</option><option>Comunidad de prueba</option></select></div><div class="notice">ⓘ <b>Modo demostración:</b> esta interfaz no inicia sesión con Discord ni cambia ajustes reales del bot. Para activar esas funciones se necesita OAuth2 y una API segura conectada al bot.</div><div class="stats-grid"><article class="stat-card"><div class="stat-top"><span>Miembros</span><span>♙</span></div><div class="stat-number">1,284</div><div class="stat-foot">Datos de ejemplo</div></article><article class="stat-card"><div class="stat-top"><span>Acciones de moderación</span><span>⌁</span></div><div class="stat-number">38</div><div class="stat-foot">Últimos 7 días · ejemplo</div></article><article class="stat-card"><div class="stat-top"><span>Alertas de seguridad</span><span>◈</span></div><div class="stat-number">06</div><div class="stat-foot">Actividad simulada</div></article><article class="stat-card"><div class="stat-top"><span>Estado del bot</span><span>●</span></div><div class="stat-number" style="font-size:1.35rem;color:#5de6bb">En línea*</div><div class="stat-foot">Estado ilustrativo, no real</div></article></div><div class="panel-grid"><section class="panel-card" id="security-settings"><h2>Escudo de seguridad</h2><p class="panel-sub">Prueba los controles visuales. No cambian el servidor de Discord.</p><div class="setting-row"><div><b>Filtro de enlaces</b><small>Simula el control de enlaces no permitidos.</small></div><input class="switch" type="checkbox" data-setting="links" data-label="Filtro de enlaces" checked aria-label="Filtro de enlaces"></div><div class="setting-row"><div><b>Protección antispam</b><small>Simula la detección de mensajes repetidos.</small></div><input class="switch" type="checkbox" data-setting="spam" data-label="Antispam" checked aria-label="Protección antispam"></div><div class="setting-row"><div><b>Modo raid</b><small>Activa visualmente una protección reforzada.</small></div><input class="switch" type="checkbox" data-setting="raid" data-label="Modo raid" aria-label="Modo raid"></div><div class="setting-row"><div><b>Filtro de palabras</b><small>Simula la moderación por frases.</small></div><input class="switch" type="checkbox" data-setting="words" data-label="Filtro de palabras" checked aria-label="Filtro de palabras"></div></section><section class="panel-card" id="quick-panel"><h2>Accesos rápidos</h2><p class="panel-sub">Acciones de ejemplo para explorar la interfaz.</p><div class="quick-actions"><button class="btn-muted" data-demo-action="Vista previa de moderación abierta.">⌁ Moderación<span>Ver herramientas</span></button><button class="btn-muted" data-demo-action="Configuración de seguridad abierta.">◈ Seguridad<span>Revisar controles</span></button><button class="btn-muted" data-demo-action="Registro de auditoría de demostración.">▤ Registros<span>Ver actividad</span></button><button class="btn-muted" data-demo-action="El asistente de configuración es una vista previa.">⚙ Configurar<span>Setup del servidor</span></button></div><div style="margin-top:20px"><label for="demo-lang" style="font-size:.8rem;color:#9bb0c4;display:block;margin-bottom:8px">Idioma del panel</label><select id="demo-lang" class="input-control" data-language style="width:100%"><option value="es">Español</option><option value="en">English</option><option value="fr">Français</option><option value="pt">Português</option></select></div></section><section class="panel-card" id="moderation-settings"><h2>Preferencias de moderación</h2><p class="panel-sub">Ajustes de muestra guardados en este navegador.</p><div class="setting-row"><div><b>Confirmar acciones delicadas</b><small>Mostrar confirmación antes de acciones críticas.</small></div><input class="switch" type="checkbox" data-setting="confirm" data-label="Confirmación de acciones" checked aria-label="Confirmar acciones delicadas"></div><div class="setting-row"><div><b>Registro de moderación</b><small>Simular un historial organizado.</small></div><input class="switch" type="checkbox" data-setting="logs" data-label="Registro de moderación" checked aria-label="Registro de moderación"></div><div class="setting-row"><div><b>Notificaciones de actividad</b><small>Preferencia visual de la demo.</small></div><input class="switch" type="checkbox" data-setting="notifications" data-label="Notificaciones" aria-label="Notificaciones de actividad"></div></section><section class="panel-card" id="preferences"><h2>Actividad reciente</h2><p class="panel-sub">Eventos ficticios para mostrar el diseño.</p><div class="activity-item"><span class="activity-mark">✓</span><div><b>Configuración revisada</b><small>Hoy · evento de demostración</small></div></div><div class="activity-item"><span class="activity-mark">⌁</span><div><b>Herramientas de moderación disponibles</b><small>Hoy · evento de demostración</small></div></div><div class="activity-item"><span class="activity-mark">◈</span><div><b>Controles de seguridad listos para configurar</b><small>Hoy · evento de demostración</small></div></div></section></div><p style="color:#607d94;font-size:.72rem;margin-top:25px">Sharky Megalodon · Panel conceptual. No solicites ni introduzcas tu token de Discord en esta página.</p></main></div><script src="app.js"></script></body></html>
+```html
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#07111f">
+
+    <title>Dashboard — Sharky</title>
+
+    <link rel="icon" href="shark.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="app-shell">
+
+<header class="app-top">
+    <a class="app-brand" href="index.html">
+        <img src="shark.svg" alt="Sharky">
+        <span>SHARKY<span class="brand-light">.</span></span>
+    </a>
+
+    <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+        <span class="demo-pill" id="discord-status">
+            Comprobando conexión...
+        </span>
+
+        <button
+            class="btn btn-small"
+            id="discord-login"
+            type="button"
+            onclick="window.location.href='https://sharkydashboardapi.onrender.com/login'">
+            Iniciar sesión con Discord
+        </button>
+
+        <button
+            class="btn btn-small btn-outline"
+            id="discord-logout"
+            type="button"
+            data-discord-logout
+            hidden>
+            Cerrar sesión
+        </button>
+
+        <a class="btn btn-small btn-outline" href="index.html">
+            ← Sitio web
+        </a>
+    </div>
+</header>
+
+<div class="app-layout">
+
+    <aside class="sidebar">
+
+        <div class="side-label">WORKSPACE</div>
+
+        <button class="side-link active" data-section-link="overview">
+            <span>▦</span> Resumen
+        </button>
+
+        <button class="side-link" data-section-link="security-settings">
+            <span>◈</span> Seguridad
+        </button>
+
+        <button class="side-link" data-section-link="moderation-settings">
+            <span>⌁</span> Moderación
+        </button>
+
+        <button class="side-link" data-section-link="quick-panel">
+            <span>⚙</span> Herramientas
+        </button>
+
+        <div class="side-label" style="margin-top:25px">
+            PREFERENCIAS
+        </div>
+
+        <button class="side-link" data-section-link="preferences">
+            <span>◎</span> Preferencias
+        </button>
+
+        <div class="sidebar-note">
+            <b style="color:#c9dbe8">Sharky Control Center</b>
+            <br>
+            Administra tu comunidad desde un único panel.
+        </div>
+
+    </aside>
+
+    <main class="app-main">
+
+        <div class="app-heading" id="overview">
+
+            <div>
+                <div class="eyebrow">CENTRO DE CONTROL</div>
+
+                <h1>Dashboard</h1>
+
+                <p>
+                    Administra la seguridad y la moderación de tus servidores.
+                </p>
+            </div>
+
+            <div style="min-width:220px">
+                <label
+                    for="server-select"
+                    style="display:block;font-size:.8rem;color:#9bb0c4;margin-bottom:8px">
+                    Servidor de Discord
+                </label>
+
+                <select
+                    class="server-select"
+                    id="server-select"
+                    data-discord-servers
+                    aria-label="Seleccionar servidor"
+                    style="max-width:100%;width:100%">
+                    <option value="">
+                        Inicia sesión para consultar tus servidores
+                    </option>
+                </select>
+            </div>
+
+        </div>
+
+        <div class="notice" id="dashboard-notice">
+            <b>Bienvenido a Sharky.</b>
+            Inicia sesión con Discord para consultar los servidores
+            que puedes administrar.
+        </div>
+
+        <div
+            style="display:flex;align-items:center;gap:12px;margin-bottom:22px"
+            data-discord-user
+            hidden>
+
+            <img
+                data-discord-avatar
+                alt="Avatar de Discord"
+                width="42"
+                height="42"
+                style="border-radius:50%;object-fit:cover"
+                hidden>
+
+            <div>
+                <div style="font-size:.75rem;color:#91a8bd">
+                    SESIÓN ACTIVA
+                </div>
+
+                <strong data-discord-username></strong>
+            </div>
+
+        </div>
+
+        <div class="stats-grid">
+
+            <article class="stat-card">
+                <div class="stat-top">
+                    <span>Miembros</span>
+                    <span>♙</span>
+                </div>
+
+                <div class="stat-number" id="member-count">—</div>
+
+                <div class="stat-foot">
+                    Se actualizará al conectar las estadísticas.
+                </div>
+            </article>
+
+            <article class="stat-card">
+                <div class="stat-top">
+                    <span>Acciones de moderación</span>
+                    <span>⌁</span>
+                </div>
+
+                <div class="stat-number" id="moderation-count">—</div>
+
+                <div class="stat-foot">
+                    Historial pendiente de conexión.
+                </div>
+            </article>
+
+            <article class="stat-card">
+                <div class="stat-top">
+                    <span>Alertas de seguridad</span>
+                    <span>◈</span>
+                </div>
+
+                <div class="stat-number" id="security-count">—</div>
+
+                <div class="stat-foot">
+                    Sin datos ficticios.
+                </div>
+            </article>
+
+            <article class="stat-card">
+                <div class="stat-top">
+                    <span>Estado de Sharky</span>
+                    <span>●</span>
+                </div>
+
+                <div
+                    class="stat-number"
+                    id="bot-status"
+                    style="font-size:1.35rem">
+                    Sin verificar
+                </div>
+
+                <div class="stat-foot">
+                    El estado real requiere consultar el bot.
+                </div>
+            </article>
+
+        </div>
+
+        <div class="panel-grid">
+
+            <section class="panel-card" id="security-settings">
+
+                <h2>Escudo de seguridad</h2>
+
+                <p class="panel-sub">
+                    Estos controles son preferencias locales de demostración.
+                    Todavía no modifican la configuración del bot.
+                </p>
+
+                <div class="setting-row">
+                    <div>
+                        <b>Filtro de enlaces</b>
+                        <small>Control de enlaces no permitidos.</small>
+                    </div>
+
+                    <input
+                        class="switch"
+                        type="checkbox"
+                        data-setting="links"
+                        data-label="Filtro de enlaces"
+                        checked
+                        aria-label="Filtro de enlaces">
+                </div>
+
+                <div class="setting-row">
+                    <div>
+                        <b>Protección antispam</b>
+                        <small>Detección de mensajes repetidos.</small>
+                    </div>
+
+                    <input
+                        class="switch"
+                        type="checkbox"
+                        data-setting="spam"
+                        data-label="Antispam"
+                        checked
+                        aria-label="Protección antispam">
+                </div>
+
+                <div class="setting-row">
+                    <div>
+                        <b>Modo anti-raid</b>
+                        <small>Protección frente a entradas masivas.</small>
+                    </div>
+
+                    <input
+                        class="switch"
+                        type="checkbox"
+                        data-setting="raid"
+                        data-label="Modo anti-raid"
+                        aria-label="Modo anti-raid">
+                </div>
+
+                <div class="setting-row">
+                    <div>
+                        <b>Filtro de palabras</b>
+                        <small>Moderación de frases configuradas.</small>
+                    </div>
+
+                    <input
+                        class="switch"
+                        type="checkbox"
+                        data-setting="words"
+                        data-label="Filtro de palabras"
+                        checked
+                        aria-label="Filtro de palabras">
+                </div>
+
+            </section>
+
+            <section class="panel-card" id="quick-panel">
+
+                <h2>Herramientas rápidas</h2>
+
+                <p class="panel-sub">
+                    Accesos rápidos de la interfaz.
+                </p>
+
+                <div class="quick-actions">
+
+                    <button
+                        class="btn-muted"
+                        data-demo-action="Las herramientas de moderación todavía están en desarrollo.">
+                        ⌁ Moderación
+                        <span>Herramientas de administración</span>
+                    </button>
+
+                    <button
+                        class="btn-muted"
+                        data-demo-action="La configuración de seguridad todavía no está conectada al bot.">
+                        ◈ Seguridad
+                        <span>Protecciones del servidor</span>
+                    </button>
+
+                    <button
+                        class="btn-muted"
+                        data-demo-action="El registro de auditoría estará disponible cuando conectemos el backend.">
+                        ▤ Registros
+                        <span>Historial de actividad</span>
+                    </button>
+
+                    <button
+                        class="btn-muted"
+                        data-demo-action="El asistente de configuración todavía está en desarrollo.">
+                        ⚙ Configurar
+                        <span>Configuración del servidor</span>
+                    </button>
+
+                </div>
+
+                <div style="margin-top:20px">
+
+                    <label
+                        for="demo-lang"
+                        style="font-size:.8rem;color:#9bb0c4;display:block;margin-bottom:8px">
+                        Idioma del panel
+                    </label>
+
+                    <select
+                        id="demo-lang"
+                        class="input-control"
+                        data-language
+                        style="width:100%">
+
+                        <option value="es">Español</option>
+                        <option value="en">English</option>
+                        <option value="fr">Français</option>
+                        <option value="pt">Português</option>
+
+                    </select>
+
+                </div>
+
+            </section>
+
+            <section class="panel-card" id="moderation-settings">
+
+                <h2>Preferencias de moderación</h2>
+
+                <p class="panel-sub">
+                    Preferencias locales de la interfaz.
+                </p>
+
+                <div class="setting-row">
+                    <div>
+                        <b>Confirmar acciones delicadas</b>
+                        <small>Solicitar confirmación antes de acciones críticas.</small>
+                    </div>
+
+                    <input
+                        class="switch"
+                        type="checkbox"
+                        data-setting="confirm"
+                        data-label="Confirmación de acciones"
+                        checked
+                        aria-label="Confirmar acciones delicadas">
+                </div>
+
+                <div class="setting-row">
+                    <div>
+                        <b>Registro de moderación</b>
+                        <small>Guardar un historial de acciones.</small>
+                    </div>
+
+                    <input
+                        class="switch"
+                        type="checkbox"
+                        data-setting="logs"
+                        data-label="Registro de moderación"
+                        checked
+                        aria-label="Registro de moderación">
+                </div>
+
+                <div class="setting-row">
+                    <div>
+                        <b>Notificaciones de actividad</b>
+                        <small>Preferencia visual de notificaciones.</small>
+                    </div>
+
+                    <input
+                        class="switch"
+                        type="checkbox"
+                        data-setting="notifications"
+                        data-label="Notificaciones"
+                        aria-label="Notificaciones de actividad">
+                </div>
+
+            </section>
+
+            <section class="panel-card" id="preferences">
+
+                <h2>Actividad reciente</h2>
+
+                <p class="panel-sub">
+                    El historial real estará disponible al conectar los registros.
+                </p>
+
+                <div class="activity-item">
+                    <span class="activity-mark">✓</span>
+
+                    <div>
+                        <b>Dashboard preparado</b>
+                        <small>Interfaz de Sharky.</small>
+                    </div>
+                </div>
+
+                <div class="activity-item">
+                    <span class="activity-mark">⌁</span>
+
+                    <div>
+                        <b>Conexión con Discord</b>
+                        <small>Pendiente de verificar.</small>
+                    </div>
+                </div>
+
+                <div class="activity-item">
+                    <span class="activity-mark">◈</span>
+
+                    <div>
+                        <b>Protecciones del servidor</b>
+                        <small>Pendientes de conectar al bot.</small>
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+
+        <p style="color:#607d94;font-size:.72rem;margin-top:25px">
+            Sharky Megalodon · Dashboard.
+            Nunca introduzcas tu token de bot en esta página.
+        </p>
+
+    </main>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
+```
